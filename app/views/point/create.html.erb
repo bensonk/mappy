@@ -1,0 +1,15 @@
+<% form_for @point, :url => { :action => "new" } do |f| -%>
+  <p>
+    <%= label_tag :latitude %><br/>
+    <%= text_field_tag :latitude %>
+  </p>
+  <p>
+    <%= label_tag :longitude %><br/>
+    <%= text_field_tag :longitude %>
+  </p>
+  <p>
+    <%= label_tag :title %><br/>
+    <%= text_field_tag :title %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end -%>
