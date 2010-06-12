@@ -4,7 +4,7 @@ class CreatePoints < ActiveRecord::Migration
       t.float :latitude 
       t.float :longitude
       t.string :title
-      t.integer :moment
+      t.integer :moment, :limit => 64
 
       t.timestamps
     end
